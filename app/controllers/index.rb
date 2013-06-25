@@ -5,5 +5,9 @@ get '/' do
 end
 
 post '/grandma' do
-  "Implement the /grandma route yourself.<br>Params: <code>#{params.inspect}</code>"
+  if params[:user_input].upcase == params[:user_input]
+    "I HEARD YOU FUCKER"
+  else
+    "NO NOT SINCE THE WAR"
+  end
 end
